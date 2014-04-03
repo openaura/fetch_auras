@@ -1,0 +1,27 @@
+{
+  "name": "fetch_aura",
+  "version": "0.0.1",
+  "description": "Fetch images from an artist aura using the OpenAura APIs",
+  "main": "index.js",
+  "scripts": {
+    "start": "coffee fetch_aura.coffee",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Dean Hudson <dean@openaura.com>",
+  "license": "BSD-2-Clause",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "preferGlobal": "true",
+  "bin": {
+     "fetch_aura": "fetch_aura.coffee"
+  },
+  "license": "BSD-2-Clause",
+  "dependencies": {
+    "restler": "~3.2.0",
+    "async": "~0.6.2",
+    "minimist": "0.0.8",
+    "wget": "0.0.1"
+  }
+}
