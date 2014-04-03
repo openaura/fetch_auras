@@ -1,6 +1,6 @@
 {
   "name": "fetch_aura",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Fetch images from an artist aura using the OpenAura APIs",
   "main": "index.js",
   "scripts": {
@@ -11,7 +11,7 @@
   "license": "BSD-2-Clause",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "git@github.com:openaura/fetch_auras.git"
   },
   "preferGlobal": "true",
   "bin": {

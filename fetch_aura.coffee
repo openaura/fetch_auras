@@ -19,7 +19,7 @@ usage = ->
                   --outdir <directory>: dir to write images, defaults to images/
                   --host <hostname>: API host, defaults to api.openaura.com
                   --port <port>: API port, defaults to 80
-                  --apikey <apikey>: API key
+                  --api_key <apikey>: API key
               """
   process.exit 1
 
@@ -34,7 +34,10 @@ apiKey = argv.api_key
 extractors['particles'] = particles
 extractors['info'] = info 
 
-uri = "http://#{host}:#{port}/#{type}/artists/#{artistId}?id_type=#{idType}"
+# special case here.
+if host == "api.openaura.com" then v = "v1/" else v =""
+
+uri = "http://#{host}:#{port}/#{v}#{type}/artists/#{artistId}?id_type=#{idType}"
 uri += "&api_key=#{apiKey}" if apiKey?
 
 rest.get(uri).on "complete", (result) ->
