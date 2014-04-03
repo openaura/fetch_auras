@@ -1,6 +1,6 @@
 {
   "name": "fetch_aura",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Fetch images from an artist aura using the OpenAura APIs",
   "main": "index.js",
   "scripts": {
@@ -15,13 +15,13 @@
   },
   "preferGlobal": "true",
   "bin": {
-     "fetch_aura": "fetch_aura.coffee"
+    "fetch_aura": "fetch_aura.coffee"
   },
-  "license": "BSD-2-Clause",
   "dependencies": {
     "restler": "~3.2.0",
     "async": "~0.6.2",
     "minimist": "0.0.8",
-    "wget": "0.0.1"
+    "wget": "0.0.1",
+    "coffee-script": "~1.7.1"
   }
 }
