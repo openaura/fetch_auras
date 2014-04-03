@@ -1,4 +1,4 @@
-# get_auras
+# fetch_aura
 
 This is a simple node example which uses the OpenAura API to fetch and
 download images.
